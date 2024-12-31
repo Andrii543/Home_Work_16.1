@@ -15,10 +15,10 @@ namespace Home_Work_16._1
                 string? sourcePath = Console.ReadLine();
 
                 if (!File.Exists(sourcePath))
-            {
+                {
                 Console.WriteLine("Файл за вказаним шляхом не існує.");
                 return;
-            }
+                }
                  
                 Console.Write("Введіть шлях до файлу, в який потрібно скопіювати дані: ");
                 string? destinationPath = Console.ReadLine();
