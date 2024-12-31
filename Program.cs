@@ -13,6 +13,12 @@ namespace Home_Work_16._1
 
                 Console.Write("\n\nВведіть шлях до вихідного файлу: ");
                 string? sourcePath = Console.ReadLine();
+
+                if (!File.Exists(sourcePath))
+            {
+                Console.WriteLine("Файл за вказаним шляхом не існує.");
+                return;
+            }
                  
                 Console.Write("Введіть шлях до файлу, в який потрібно скопіювати дані: ");
                 string? destinationPath = Console.ReadLine();
